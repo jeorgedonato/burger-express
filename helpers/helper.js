@@ -36,4 +36,4 @@ const objToSql = ob => {
   return arr.toString();
 }
 
-module.export = { printQuestionMarks, objToSql }
+module.exports = { printQuestionMarks, objToSql }
