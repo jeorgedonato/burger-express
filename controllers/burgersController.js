@@ -5,7 +5,6 @@ const router = express.Router();
 router.get("/", async function (req, res) {
   try {
     const obj = await burgerModel.all();
-    console.log(obj);
     res.render('index', { burgers: obj });
   } catch (error) {
     throw error;

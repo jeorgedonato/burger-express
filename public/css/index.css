@@ -1,0 +1,111 @@
+html,
+body{
+  margin: 0;
+  font-family: 'Oxygen', sans-serif;
+  height: 100%;
+  background-color: #40BF94;
+}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+  height: auto;
+  padding-top: 0;
+padding-bottom: 0;
+}
+
+.item{
+  flex-grow: 1;
+}
+
+.item + .item {
+  margin-left: 2%;
+}
+
+.item-flex{
+  flex-grow: 1;
+  width: 300px;
+}
+.item-flex + .item-flex {
+  margin-left: 2%;
+}
+
+header{
+  background-color: #BF406B;
+  color: white;
+  width: 100%;
+}
+
+header > h1 {
+  margin-left: 30px;
+  font-size: 2rem;
+}
+
+.one-item{
+  margin: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+.flex-container{
+  display: inherit;
+  margin: 0 2%;
+  /* padding: 0 20vw; */
+  font-size: 1.5em;
+  width: 100%;
+}
+
+ul{
+  list-style-type: none;
+  /* width: 80%; */
+}
+
+ul > li {
+  background-color: white;
+  color: black;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.added-ul > li  > a{
+  border: solid black 1px;
+  text-decoration: none;
+  color: white;
+  background-color: #BF406B;
+  border-radius: 10px;
+  padding: 2px;
+  margin-left: 5px;
+}
+
+.deleted-ul > li {
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+
+.submit-form > input {
+  height: 50px;
+  width: 500px;
+  font-size: 1.5em;
+  border: solid 3px black;
+  border-radius: 15px;
+  
+}
+
+.submit-form > a{
+  border: solid black 1px;
+  text-decoration: none;
+  color: white;
+  background-color: #BF406B;
+  border-radius: 10px;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 1.5em;
+}
+
+.alert-span{
+  color: red;
+  font-size: 1.5em;
+}
+

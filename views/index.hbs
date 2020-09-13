@@ -1,0 +1,51 @@
+<section class="container">
+  <header>
+    <h1>Burger Express</h1>
+  </header>
+
+  <div class="item one-item"><img src="/images/burger.jpg" alt="Burger Image" width="400px" height="350px"></div>
+
+
+  <div class="flex-container">
+    <div class="item-flex">
+      <ul class="added-ul">
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block }}
+        {{/unless}}
+        {{/each}}
+        {{!-- <li>asdasdaasdasdasdassd <a href="">Devour Me!</a>
+        </li>
+        <li>asdasdasd <a href="">Devour Me!</a></li>
+        <li>asdasdasd <a href="">Devour Me!</a></li>
+        <li>asdasdasd <a href="">Devour Me!</a></li>
+        <li>asdasdasd <a href="">Devour Me!</a></li>
+        <li>asdasdasd <a href="">Devour Me!</a></li> --}}
+      </ul>
+    </div>
+    <div class="item-flex">
+      <ul class="deleted-ul">
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block }}
+        {{/if}}
+        {{/each}}
+        {{!-- <li>asdasdasd</li>
+        <li>asdasdasd</li> --}}
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="item one-item submit-form">
+    <input type="text" id="text-input">
+    <br>
+    <span class="alert-span"></span>
+    <span>Please click submit to save your Burger</span>
+    <br>
+    <a href="#" id="submit-form">Submit</a>
+  </div>
+
+
+
+</section>
